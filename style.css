@@ -19,8 +19,8 @@ main {
   width: 350px;
   border: 2px solid grey;
   background-color: white;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.77); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.77);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.77);
 }
 
 .title {
@@ -39,7 +39,8 @@ main {
   border-bottom: 1px solid grey;
 }
 
-.book h4,span {
+.book h4,
+span {
   margin-bottom: 5px;
 }
 
