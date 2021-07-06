@@ -69,7 +69,7 @@ Book library with vanilla javascript.
 ### Built With
 
 * [HTML](https://www.w3schools.com/html/)
-* [CSS](https://sass-lang.com/)
+* [CSS](https://www.w3schools.com/css/)
 * [JS](https://www.javascript.com/)
 
 
