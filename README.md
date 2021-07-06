@@ -73,6 +73,20 @@ Book library with vanilla javascript.
 * [JS](https://www.javascript.com/)
 
 
+## Authors
+
+👤 **Juan Carlos Hernandez**
+
+- GitHub: [Juan Carlos Hernandez](https://github.com/jchernandez87)
+- Twitter: [Twitter](https://twitter.com/Juancar70771241)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-carlos-hernandez-200a05175)
+
+👤 **Ibrohim Rasulov**
+
+- GitHub: [@IbrohimRasulov](https://github.com/IbrohimRasulov)
+- Twitter: [@IbrohimRasu1ov](https://twitter.com/IbrohimRasu1ov)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ibrohim-rasulov-a88352209/)
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -141,14 +155,14 @@ License Free.
 
 
 
-<!-- CONTACT -->
+<!-- CONTACT 
 ## Contact
 
 Juan Carlos - [@FindMeOnTwitter](https://twitter.com/Juancar70771241) - jchernandez827@gmail.com
 
 Project Link: [https://github.com/jchernandez87/My-Portfolio](https://github.com/jchernandez87/Awesome-Books)
 
-
+-->
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
