@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
-/* eslint-disable linebreak-style */
 // eslint-disable-next-line max-classes-per-file
 const bookContainer = document.querySelector('.book-container');
 const form = document.querySelector('.fields');
@@ -41,6 +41,14 @@ class Booklist {
     if (item.classList.contains('remove')) {
       item.parentElement.remove();
     }
+    const nodeTitle = item.parentElement.firstChild.textContent;
+    const newArr = Save.getData();
+    for (let i = 0; i < newArr.length; i++) {
+      if (nodeTitle === newArr[i].title) {
+        newArr.splice(newArr[i], 1);
+      }
+    }
+    localStorage.setItem('data', JSON.stringify(newArr));
   }
 }
 
