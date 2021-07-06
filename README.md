@@ -64,7 +64,7 @@
 
 <!-- [![Capstone][product-screenshot]](https://example.com) -->
 
-Book library with vanilla javascript.
+Javascript practice to store, display and remove objects from localStorage and UI.
 
 ### Built With
 
