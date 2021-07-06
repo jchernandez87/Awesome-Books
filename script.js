@@ -14,7 +14,6 @@ class Book {
 
 class Booklist {
   static display() {
-    // eslint-disable-next-line no-use-before-define
     const listArr = Save.getData();
     for (let i = 0; i < listArr.length; i++) {
       Booklist.add(listArr[i]);
