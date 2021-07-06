@@ -16,11 +16,12 @@ class Booklist {
   static display() {
     const listArr = Save.getData();
     for (let i = 0; i < listArr.length; i++) {
-      Booklist.add(listArr[i]);
+      const index = listArr.indexOf(listArr[i]);
+      Booklist.add(listArr[i], index);
     }
   }
 
-  static add(book) {
+  static add(book, pos) {
     const bookCard = document.createElement('div');
     bookCard.classList.add('book');
     const bookTitle = document.createElement('h4');
@@ -30,6 +31,7 @@ class Booklist {
     author.textContent = book.author;
     bookCard.appendChild(author);
     const bookBtn = document.createElement('button');
+    bookBtn.setAttribute('data-id', pos);
     bookBtn.classList.add('remove');
     bookBtn.textContent = 'Remove';
     bookCard.appendChild(bookBtn);
@@ -37,17 +39,15 @@ class Booklist {
   }
 
   static remove(item) {
+    const index = item.getAttribute('data-id');
+    const newArr = Save.getData();
+    if (index) {
+      newArr.splice(index, 1);
+      localStorage.setItem('data', JSON.stringify(newArr));
+    }
     if (item.classList.contains('remove')) {
       item.parentElement.remove();
     }
-    const nodeTitle = item.parentElement.firstChild.textContent;
-    const newArr = Save.getData();
-    for (let i = 0; i < newArr.length; i++) {
-      if (nodeTitle === newArr[i].title) {
-        newArr.splice(newArr[i], 1);
-      }
-    }
-    localStorage.setItem('data', JSON.stringify(newArr));
   }
 }
 
