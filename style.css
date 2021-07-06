@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(226, 225, 225, 0.616);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 24px;
+  width: 350px;
+  border: 2px solid grey;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.77);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.77);
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.book-container {
+  flex-direction: column;
+}
+
+.book {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid grey;
+}
+
+.book h4,
+span {
+  margin-bottom: 5px;
+}
+
+.book button {
+  padding: 3px 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.fields {
+  margin-top: 15px;
+  height: 30%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fields input {
+  padding: 2px 8px;
+  margin-bottom: 15px;
+}
+
+.fields button {
+  width: 28%;
+  padding: 3px 10px;
+}
