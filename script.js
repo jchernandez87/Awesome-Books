@@ -24,12 +24,15 @@ class Booklist {
   static add(book, pos) {
     const bookCard = document.createElement('div');
     bookCard.classList.add('book');
+    const aboutContainer = document.createElement('div');
+    aboutContainer.classList.add('aboutContainer');
+    bookCard.appendChild(aboutContainer);
     const bookTitle = document.createElement('h4');
-    bookTitle.textContent = book.title;
-    bookCard.appendChild(bookTitle);
+    bookTitle.textContent = `"${book.title}"`;
+    aboutContainer.appendChild(bookTitle);
     const author = document.createElement('span');
-    author.textContent = book.author;
-    bookCard.appendChild(author);
+    author.textContent = `by ${book.author}`;
+    aboutContainer.appendChild(author);
     const bookBtn = document.createElement('button');
     bookBtn.setAttribute('data-id', pos);
     bookBtn.classList.add('remove');
