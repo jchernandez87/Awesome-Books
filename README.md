@@ -63,6 +63,9 @@
 ## About The Project
 
 [![Capstone][product-screenshot]](https://jchernandez87.github.io/Awesome-Books)
+[![Capstone][product-screenshot2]](https://jchernandez87.github.io/Awesome-Books)
+[![Capstone][product-screenshot3]](https://jchernandez87.github.io/Awesome-Books)
+[![Capstone][product-screenshot4]](https://jchernandez87.github.io/Awesome-Books)
 
 Javascript practice to store, display and remove objects from localStorage and UI.
 
@@ -183,5 +186,12 @@ Project Link: [https://github.com/jchernandez87/My-Portfolio](https://github.com
 [issues-url]: https://github.com/jchernandez87/Awesome-Books/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/juan-carlos-hernandez-200a05175
-[product-screenshot]: https://user-images.githubusercontent.com/44485810/124806293-28b89680-df22-11eb-93a6-3f9d7e9c76c7.png
+[product-screenshot]: https://user-images.githubusercontent.com/44485810/124983207-4a3a8080-dffd-11eb-9ae8-2ec6f79aab29.png
+[product-screenshot2]: https://user-images.githubusercontent.com/44485810/124983545-b5845280-dffd-11eb-851f-85d428b9c445.png
+[product-screenshot3]: https://user-images.githubusercontent.com/44485810/124983673-df3d7980-dffd-11eb-8dd4-22d858e76bfc.png
+[product-screenshot4]: https://user-images.githubusercontent.com/44485810/124983713-ec5a6880-dffd-11eb-80de-5f1aced4c299.png
+
+
+
+
 
