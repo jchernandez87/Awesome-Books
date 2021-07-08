@@ -21,7 +21,7 @@
     <a href="https://github.com/jchernandez87/Awesome-Books"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://jchernandez87.github.io/Awesome-Books"">View Deploy</a>
+    <a href="https://jchernandez87.github.io/Awesome-Books"">Live Demo</a>
     ·
     <a href="https://github.com/jchernandez87/Awesome-Books"/issues">Report Bug</a>
     ·
