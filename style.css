@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-main {
+.main-list {
   width: 100vw;
   min-height: 100vh;
   background-image:
@@ -48,7 +48,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  border: 1px solid rgb(58, 58, 58);
 }
 
 .book {
@@ -115,9 +114,25 @@ main {
 }
 
 .book button:hover {
-  background-color: #ffa42d;
+  background-color: #ff6308;
   transition: 200ms ease-in-out;
-  transform: scale(1.01);
+}
+
+.main-add {
+  width: 100vw;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(15, 8, 8, 0.5),
+      rgba(15, 7, 7, 0.5)
+    ),
+    url(./assets/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fields {
@@ -127,19 +142,6 @@ main {
   width: 90%;
   display: flex;
   flex-direction: column;
-}
-
-.fields::before {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  align-self: center;
-  display: block;
-  content: '';
-  height: 2px;
-  width: 180px;
-  border-radius: 5px;
-  background-color: #ff9506;
-  position: relative;
 }
 
 .fields h1 {
@@ -161,17 +163,60 @@ main {
   color: white;
 }
 
+.main-contact {
+  width: 100vw;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(15, 8, 8, 0.5),
+      rgba(15, 7, 7, 0.5)
+    ),
+    url(./assets/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .fields button:hover {
-  background-color: #ffa42d;
+  background-color: #ff6308;
   transition: 200ms ease-in-out;
-  transform: scale(1.02);
 }
 
 @media only screen and (min-width: 790px) {
+  .main-list {
+    min-height: 90vh;
+    display: flex;
+  }
+  
+  .main-list.hidden {
+    display: none;
+  }
+
+  .main-add {
+    min-height: 90vh;
+    display: none;
+  }
+
+  .main-add.show{
+    display: flex;
+  }
+
+  .main-contact {
+    min-height: 90vh;
+    display: none;
+  }
+
+  .main-contact.show {
+    display: flex;
+  }
+  
   .nav-desktop {
     background-color: #2a2a2a;
     padding: 0 55px;
-    height: 62px;
+    height: 6vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,7 +236,7 @@ main {
   }
 
   .nav-desktop ul {
-    width: 280px;
+    width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -215,11 +260,31 @@ main {
   }
   
   .container {
-    margin: 15px 0;
+    margin: 0 0;
     width: 60%;
+    padding-bottom: 50px;
+  }
+
+  .book-container {
+    max-height: 65vh;
+    overflow-y: auto;
   }
 
   .fields {
-    width: 60%;
+    width: 40%;
+  }
+
+  footer {
+    background-color: #2a2a2a;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    height: 4vh;
+  }
+
+  footer span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
   }
 }

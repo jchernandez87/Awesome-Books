@@ -17,30 +17,37 @@
         </div>
         <ul>
             <li>
-                <button type="button">List</button>
+                <button data-btn="list-btn" type="button">List</button>
             </li>
             <li>
-                <button type="button">Add new</button>
+                <button data-btn="add-btn" type="button">Add new</button>
             </li>
             <li>
-                <button type="button">Contact</button>
+                <button data-btn="contact-btn" type="button">Contact</button>
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="main-list">
         <div class="container">
             <div class="title">
                 <h1>Awesome Books</h1>
             </div>
             <section class="book-container">
             </section>
-            <form action="submit" class="fields">
-                <h1>Add A New Book</h1>
-                <input class="book-title" name="book" type="text" placeholder="Book">
-                <input class="author" name="author" type="text" placeholder="Author">
-                <button class="form-btn" type="submit">Add</button>
-            </form>
         </div>
+    </main>
+
+    <main class="main-add">
+        <form action="submit" class="fields">
+            <h1>Add A New Book</h1>
+            <input class="book-title" name="book" type="text" placeholder="Book">
+            <input class="author" name="author" type="text" placeholder="Author">
+            <button class="form-btn" type="submit">Add</button>
+        </form>
+    </main>
+
+    <main class="main-contact">
+        <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolore sequi odit ullam quae rem cupiditate possimus exercitationem aliquam, ex dolorem deserunt sit ratione vel quos voluptatem illum. Corporis, aut!</p>
     </main>
     <footer>
         <span>Copyright©</span>

@@ -4,6 +4,34 @@
 // eslint-disable-next-line max-classes-per-file
 const bookContainer = document.querySelector('.book-container');
 const form = document.querySelector('.fields');
+const mainList = document.querySelector('.main-list');
+const mainAdd = document.querySelector('.main-add');
+const mainContact = document.querySelector('.main-contact');
+const listBtn = document.querySelector('button[data-btn="list-btn"]');
+const addBtn = document.querySelector('button[data-btn="add-btn"]');
+const contactBtn = document.querySelector('button[data-btn="contact-btn"]');
+
+const date = new Date();
+console.log(date);
+console.log(contactBtn);
+
+listBtn.addEventListener('click', () => {
+  mainList.classList.remove('hidden');
+  mainAdd.classList.remove('show');
+  mainContact.classList.remove('show');
+});
+
+addBtn.addEventListener('click', () => {
+  mainAdd.classList.add('show');
+  mainList.classList.add('hidden');
+  mainContact.classList.remove('show');
+});
+
+contactBtn.addEventListener('click', () => {
+  mainList.classList.add('hidden');
+  mainContact.classList.add('show');
+  mainAdd.classList.remove('show');
+});
 
 class Book {
   constructor(title, author) {
