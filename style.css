@@ -313,7 +313,7 @@ footer {
   height: 50px;
 }
 
-footer .text {
+footer .footer-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: white;
@@ -450,12 +450,6 @@ footer .text {
     display: flex;
     align-items: center;
     height: 4vh;
-  }
-
-  footer span {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: white;
   }
 
   .contact-page {
