@@ -4,6 +4,103 @@
 // eslint-disable-next-line max-classes-per-file
 const bookContainer = document.querySelector('.book-container');
 const form = document.querySelector('.fields');
+const mainList = document.querySelector('.main-list');
+const mainAdd = document.querySelector('.main-add');
+const mainContact = document.querySelector('.main-contact');
+const listBtn = document.querySelector('button[data-btn="list-btn"]');
+const addBtn = document.querySelector('button[data-btn="add-btn"]');
+const contactBtn = document.querySelector('button[data-btn="contact-btn"]');
+const listBtnMobile = document.querySelector('button[data-btn="list-mobile"]');
+const addBtnMobile = document.querySelector('button[data-btn="add-mobile"]');
+const contactBtnMobile = document.querySelector('button[data-btn="contact-mobile"]');
+const menuMobile = document.querySelector('.menu-mobile');
+const openBtn = document.querySelector('.mobile-btn');
+const closeBtn = document.querySelector('.close-btn');
+
+function openMenu() {
+  menuMobile.classList.add('show');
+}
+
+function closeMenu() {
+  menuMobile.classList.remove('show');
+}
+
+openBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
+
+function doDate() {
+  const today = new Date();
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  const monthText = document.querySelector('.month');
+  monthText.textContent = currentMonth();
+  const day = document.querySelector('.day');
+  day.textContent = `${today.getDate()}th`;
+  const year = document.querySelector('.year');
+  year.textContent = `${today.getFullYear()},`;
+  const hour = document.querySelector('.hour');
+  let hours = today.getHours();
+  hours %= 12;
+  hours = hours || 12;
+  let minutes = today.getMinutes();
+  minutes = minutes < 10 ? `0${minutes}` : minutes;
+  let seconds = today.getSeconds();
+  seconds = seconds < 10 ? `0${seconds}` : seconds;
+  hour.textContent = `${hours}: ${minutes}: ${seconds}`;
+  const AmPm = document.querySelector('.am-pm');
+  const test = today.getHours() >= 12 ? 'pm' : 'am';
+  AmPm.textContent = `${test}`;
+
+  function currentMonth() {
+    let str = '';
+    for (let i = 1; i < months.length; i++) {
+      if (today.getMonth() === i) {
+        str = months[i];
+      }
+    }
+    return str;
+  }
+}
+
+setInterval(doDate, 1000);
+
+listBtn.addEventListener('click', () => {
+  mainList.classList.remove('hidden');
+  mainAdd.classList.remove('visible');
+  mainContact.classList.remove('visible');
+});
+
+addBtn.addEventListener('click', () => {
+  mainAdd.classList.add('visible');
+  mainList.classList.add('hidden');
+  mainContact.classList.remove('visible');
+});
+
+contactBtn.addEventListener('click', () => {
+  mainList.classList.add('hidden');
+  mainContact.classList.add('visible');
+  mainAdd.classList.remove('visible');
+});
+
+listBtnMobile.addEventListener('click', () => {
+  mainList.classList.remove('hidden');
+  mainAdd.classList.remove('visible');
+  mainContact.classList.remove('visible');
+  menuMobile.classList.remove('show');
+});
+
+addBtnMobile.addEventListener('click', () => {
+  mainAdd.classList.add('visible');
+  mainList.classList.add('hidden');
+  mainContact.classList.remove('visible');
+  menuMobile.classList.remove('show');
+});
+
+contactBtnMobile.addEventListener('click', () => {
+  mainList.classList.add('hidden');
+  mainContact.classList.add('visible');
+  mainAdd.classList.remove('visible');
+  menuMobile.classList.remove('show');
+});
 
 class Book {
   constructor(title, author) {

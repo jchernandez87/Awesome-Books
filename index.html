@@ -9,23 +9,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+    />
 </head>
 <body>
-    <main>
+    <nav class="nav-desktop">
+        <div>
+            <button type="button">Awesome Books</button>
+        </div>
+        <ul>
+            <li>
+                <button data-btn="list-btn" type="button">List</button>
+            </li>
+            <li>
+                <button data-btn="add-btn" type="button">Add new</button>
+            </li>
+            <li>
+                <button data-btn="contact-btn" type="button">Contact</button>
+            </li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <button type="button" class="mobile-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+    </nav>
+    <div class="menu-mobile">
+        <div>
+            <i class="fas fa-times fa-2x close-btn"></i>
+        </div>
+        <ul>
+            <li>
+                <button data-btn="list-mobile" type="button">List</button>
+            </li>
+            <li>
+                <button data-btn="add-mobile" type="button">Add new</button>
+            </li>
+            <li>
+                <button data-btn="contact-mobile" type="button">Contact</button>
+            </li>
+        </ul>
+    </div>
+    <div class="time">
+        <ul>
+            <li class="month"></li>
+            <li class="day"></li>
+            <li class="year"></li>
+            <li class="hour"></li>
+            <li class="am-pm"></li>
+        </ul>
+    </div>
+    <div class="main-list">
         <div class="container">
             <div class="title">
                 <h1>Awesome Books</h1>
             </div>
             <section class="book-container">
             </section>
-            <form action="submit" class="fields">
-                <h1>Add A New Book</h1>
-                <input class="book-title" name="book" type="text" placeholder="Book">
-                <input class="author" name="author" type="text" placeholder="Author">
-                <button class="form-btn" type="submit">Add</button>
-            </form>
         </div>
-    </main>
+    </div>
+    <div class="main-add">
+        <form action="submit" class="fields">
+            <h1>Add A New Book</h1>
+            <input class="book-title" name="book" type="text" placeholder="Book">
+            <input class="author" name="author" type="text" placeholder="Author">
+            <button class="form-btn" type="submit">Add</button>
+        </form>
+    </div>
+    <div class="main-contact">
+        <div class="contact-page">
+            <h1>Contact Information</h1>
+            <p>Do you have any question or just want to say "Hello"?</p>
+            <p>You can reach out to us!</p>
+            <br>
+            <ul>
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our phone number: 021232738738784</li>
+                <li>Our address: Street 22, 232323 City, Country</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <span class="footer-text">Copyright©</span>
+    </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
