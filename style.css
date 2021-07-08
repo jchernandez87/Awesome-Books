@@ -308,3 +308,24 @@
     color: white;
   }
 }
+
+#contact-page {
+  color: white;
+}
+
+#contact-page h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#contact-page p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+#contact-page ul {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+}
