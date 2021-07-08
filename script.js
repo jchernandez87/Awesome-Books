@@ -10,10 +10,33 @@ const mainContact = document.querySelector('.main-contact');
 const listBtn = document.querySelector('button[data-btn="list-btn"]');
 const addBtn = document.querySelector('button[data-btn="add-btn"]');
 const contactBtn = document.querySelector('button[data-btn="contact-btn"]');
+const today = new Date();
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 
-const date = new Date();
-console.log(date);
-console.log(contactBtn);
+const monthText = document.querySelector('.month');
+monthText.textContent = currentMonth();
+const day = document.querySelector('.day');
+day.textContent = `${today.getDay()}th`;
+const year = document.querySelector('.year');
+year.textContent = `${today.getFullYear()},`;
+const hour = document.querySelector('.hour');
+let hours = today.getHours();
+hours %= 12;
+hours = hours || 12;
+hour.textContent = `${hours}: ${today.getMinutes()}`;
+const AmPm = document.querySelector('.am-pm');
+const test = today.getHours() >= 12 ? 'pm' : 'am';
+AmPm.textContent = `${test}`;
+
+function currentMonth() {
+  let str = '';
+  for (let i = 1; i < months.length; i++) {
+    if (today.getMonth() === i) {
+      str = months[i];
+    }
+  }
+  return str;
+}
 
 listBtn.addEventListener('click', () => {
   mainList.classList.remove('hidden');

@@ -186,6 +186,26 @@
 }
 
 @media only screen and (min-width: 790px) {
+  .time {
+    width: 220px;
+    background-color: transparent;
+    position: fixed;
+    top: 65px;
+    right: 25px;
+    z-index: 999;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+
+  .time ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
   .main-list {
     min-height: 90vh;
     display: flex;
